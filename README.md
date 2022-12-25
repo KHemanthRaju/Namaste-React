@@ -8,28 +8,30 @@
 
 - What is Emmet?
 
-  - This is a shortcut that generates a large amount of code on writing some text/key in text editors.
+  - Emmet is a free add-on for your text editor. It allows you to type shortcuts that are then expanded into full pieces of code. 
+  - By using Emmet, developers type less, they save both on keystrokes and time.
   - For example, if you type `doc` in VS Code this will generate an entire HTML boiler Plot for you. This is similar to the snippet.
+  - You can explore more on Emmet with this link : [Emmet Cheat Sheet](https://docs.emmet.io/cheat-sheet/)
 
   ***
 
 - Difference between a Library and a Framework?
-  - The simple one difference
-    | Framework | Library |
-    | :--------------------------------------------------------: | :----------------: |
-    | It provides ready-to-use tools for fast application dev | Libraries do not |
+  - The main distinction between a framework and a library is that a framework inverts program control. It informs the developer of what they require. A library, however, does not. Instead, a programmer calls the library when and where he needs it.
+  - When you use a library, you are in charge of the flow of the application. You are choosing when and where to call the library. When you use a framework, the framework is in charge of the flow. It provides some places for you to plug in your code, but it calls the code you plugged in as needed.
+  - ReactJS is a Library and AngularJS is a Framework.
 
 ---
 
 - What is CDN? Why do we use it?
-  - `CDN` Content Delivery Network. It is a system of distributed systems that deliver content based on the user's geographical location.
+  - `CDN` Content Delivery Network.
+  - A CDN is a network of servers that distributes content from an “origin” server throughout the world by caching content close to where each end user is accessing the internet via a web-enabled device. The content they request is first stored on the origin server and is then replicated and stored elsewhere as needed.
   - Why do we use it?
     - This is used to reduce the latency of content delivery and it improves the performance of the website.
 
 ---
 
 - Why is React known as React?
-  - React is a library for building composable user interfaces. It encourages the creation of reusable UI components which present data that changes over time.
+  - React was developed for applications (Facebook) that have constantly changing data. Since React is a front-end framework or the “View” in MVC, this means that as the user clicks around and changes the app's data, the view should “react” or change with those user events.
 
 ---
 
@@ -46,15 +48,13 @@
 - What is difference between react.development.js and react.production.js files via CDN?
 
   - The development build is used - as the name suggests - for development reasons.
-
   - The production build, on the other hand, runs in production mode which means this is the code running on your client's machine.
 
 ---
 
-- What are async and defer? - [see my Youtube video ;)]
+- What are async and defer?
 
   - In practice, defer is used for scripts that need the whole DOM, and/or their relative execution order is important.
-
   - And async is used for independent scripts, like counters or ads. And their relative execution order does not matter.
 
 ---
