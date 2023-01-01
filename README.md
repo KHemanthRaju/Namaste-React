@@ -252,7 +252,7 @@ Build your first `Hello World` program using `React`
 - What is '.gitignore'? What we should add and do not add into it?
 
     - .gitignore is the place where we put our files that need not be sent to server. Usually we put those files here which can be autogenrated at production server
-    - For example in gitignore we add node-modules because node-modules can be autogenrated at production server. We should not add parcel-cache or any packagejson file because those are needed at server to get the packages.
+    - For example in gitignore we add node-modules because node-modules can be autogenrated at production server. We should not add package.json file because those are needed at server to get the packages.
 
 ---
 
