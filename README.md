@@ -281,7 +281,8 @@ Build your first `Hello World` program using `React`
 ---
 
 - What is 'browserlists'?
-- 
+     
     - 'broswerlists' is the option in package.json which is used to provide information which older version broswer should support out app.
 
+ ---
 </details>
