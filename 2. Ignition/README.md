@@ -71,6 +71,7 @@
 ---
 
 - Why should I not modify 'package-lock.json'?
+- 
     - package-lock.json actually is large information center which keeps track of package and version and dependency information which is used to run app if that get modified then it will create conflict at server side and produce wrong results.
 
 ---
@@ -88,4 +89,5 @@
 ---
 
 - What is 'browserlists'?
+- 
     - 'broswerlists' is the option in package.json which is used to provide information which older version broswer should support out app.
