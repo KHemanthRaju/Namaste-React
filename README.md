@@ -288,7 +288,9 @@ Build your first `Hello World` program using `React`
 </details>
 
 ## Chapter 3 Laying the Foundation
+     
 <details>
+     
 ## 1. Writing Scripts in package.json.
 <hr>
 
