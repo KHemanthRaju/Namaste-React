@@ -82,18 +82,18 @@ root.render(<HeaderComponent />);
 
 ## 5. Composition of Component(Add a component inside another)
 ```
-function SubComponent(){
-  return <p>SubComponent</p>
+const SubComponent = () => {
+    return <p>SubComponent</p>
 }
-function Component(){
-  return (
-    <>
-      <p>Component</p>
-      <SubComponent />
-    </>
-  );
+const MainComponent = () => {
+    return(
+        <div>
+            <p>Main Component</p>
+            <SubComponent/>
+        </div>
+    );
 }
-root.render(<Component />);
+root.render(<MainComponent/>);
 ```
 
 
