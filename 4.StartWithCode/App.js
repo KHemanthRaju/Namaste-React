@@ -571,7 +571,7 @@ const Body = () => {
         <div className='restaurant-list'>
             {
                 Restaurantlist.map((restaurant)=>{
-                    return <RestaurantCard {...restaurant.data}/>;
+                    return <RestaurantCard {...restaurant.data} key={restaurant.data.id}/>;
                 })
             }
         </div>
