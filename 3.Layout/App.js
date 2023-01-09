@@ -76,6 +76,14 @@ const container3 = (
 // Rendering react element - {header1}
 // Rendering React Functional Compoent - <HeaderComponent/>
 
+const Header45 = ()=>{
+    return (
+        <div>
+            <h1>Hello</h1>
+        </div>
+    );
+}
+
 const HeaderComponent = () => {
     return (
         <div className="title" id="container">
