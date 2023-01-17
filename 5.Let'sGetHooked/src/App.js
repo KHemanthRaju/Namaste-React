@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Title from "./components/Title";
 /**
  *  Header
  *      - Logo
@@ -27,16 +28,6 @@ import ReactDOM from "react-dom/client";
 //         </div>
 //     );
 // }
-
-const Title = () => {
-  return (
-    <img
-      className="logo"
-      alt="logo"
-      src="https://yt3.ggpht.com/ytc/AMLnZu_EC-ECXAxRAixWGEfMsE1rdSoetBHyxmLNdtCB=s900-c-k-c0x00ffffff-no-rj"
-    />
-  );
-};
 
 const Header = () => {
   return (
