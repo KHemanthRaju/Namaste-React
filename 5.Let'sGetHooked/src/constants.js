@@ -1,38 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Body from "./components/Body";
-import { IMG_CDN_URL } from "./constants";
-/**
- *  Header
- *      - Logo
- *      - nav items
- *  Body
- *      - search bar
- *      - Restaurantlist
- *          -RestaurantCard
- *              -Image
- *              -Name
- *              - Prices
- *              - Cuisines
- *  Footer
- *      - Copyright
- *      - Address
- *      - Links
- */
+export const IMG_CDN_URL =
+  "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
 
-//React Component
-// const Container = () => {
-//     return (
-//         <div>
-//             <h1>Hello World</h1>
-//             <h2>Hello World 2</h2>
-//         </div>
-//     );
-// }
-
-const Restaurantlist = [
+export const Restaurantlist = [
   {
     type: "restaurant",
     data: {
@@ -525,33 +494,3 @@ const Restaurantlist = [
     subtype: "basic",
   },
 ];
-
-const RestaurantCard = ({
-  name,
-  cloudinaryImageId,
-  cuisines,
-  lastMileTravel,
-}) => {
-  return (
-    <div className="card">
-      <img src={IMG_CDN_URL + cloudinaryImageId} />
-      <h2>{name}</h2>
-      <h2>{cuisines.join(", ")}</h2>
-      <h3>{lastMileTravel} minutes</h3>
-    </div>
-  );
-};
-
-const AppLayout = () => {
-  return (
-    <>
-      <Header />
-      <Body />
-      <Footer />
-    </>
-  );
-};
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(<AppLayout />);
