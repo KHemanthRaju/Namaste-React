@@ -15,10 +15,19 @@ const Body = () => {
   //const [searchClicked, setSearchClicked] = useState("false");
 
   useEffect(() => {
-    console.log("useEffect usage");
+    getRestaurants();
   }, [searchInput]);
 
   console.log("render");
+
+  async function getRestaurants() {
+    const data = await fetch(
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.3900857&lng=78.49333519999999&page_type=DESKTOP_WEB_LISTING"
+    );
+    const json = await data.json();
+    console.log(json);
+    setRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+  }
 
   return (
     <>
