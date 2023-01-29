@@ -47,7 +47,11 @@
 .shimmer-card {
   width: 200px;
   height: 200px;
-  background: lightgrey;
+  background: silver;
   padding: 10px;
   margin: 10px;
+}
+
+.menu {
+  display: flex;
 }
