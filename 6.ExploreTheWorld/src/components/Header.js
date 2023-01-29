@@ -1,3 +1,9 @@
+import { useState } from "react";
+
+const loggedInUser = () => {
+  return true;
+};
+
 const Title = () => {
   return (
     <img
@@ -9,6 +15,7 @@ const Title = () => {
 };
 
 const Header = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
   return (
     <div className="header">
       <Title />
@@ -20,6 +27,12 @@ const Header = () => {
           <li>Cart</li>
         </ul>
       </div>
+      {/* JSX Expressions are allowed not statements */}
+      {isLoggedIn ? (
+        <button onClick={() => setIsLoggedIn(false)}>Login</button>
+      ) : (
+        <button onClick={() => setIsLoggedIn(true)}>Logout</button>
+      )}
     </div>
   );
 };
