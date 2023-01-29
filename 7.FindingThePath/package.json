@@ -4,6 +4,7 @@
   "description": "4. Start with code",
   "main": "App.js",
   "scripts": {
+    "start": "npx parcel index.html",
     "test": "jest"
   },
   "keywords": [

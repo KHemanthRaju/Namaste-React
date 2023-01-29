@@ -43,3 +43,11 @@
   padding: 10px;
   text-align: center;
 }
+
+.shimmer-card {
+  width: 200px;
+  height: 200px;
+  background: lightgrey;
+  padding: 10px;
+  margin: 10px;
+}
