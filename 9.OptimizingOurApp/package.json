@@ -1,0 +1,24 @@
+{
+  "name": "4.startwithcode",
+  "version": "1.0.0",
+  "description": "7. Finding the Path",
+  "main": "App.js",
+  "scripts": {
+    "start": "npx parcel index.html",
+    "test": "jest"
+  },
+  "keywords": [
+    "reactjs"
+  ],
+  "author": "Hemanth Raju",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.0"
+  }
+}
