@@ -1,4 +1,5 @@
 import { useState } from "react";
+import useOnline from "../utils/useOnline";
 //import { Link } from "react-router-dom";
 const Link = require("react-router-dom").Link;
 
@@ -14,6 +15,7 @@ const Title = () => {
 
 const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const isOnline = useOnline();
   return (
     <div className="header">
       <Title />
@@ -32,9 +34,13 @@ const Header = () => {
           </Link>
 
           <li>Cart</li>
+          <Link to="/instamart">
+            <li>Instamart</li>
+          </Link>
         </ul>
       </div>
       {/* JSX Expressions are allowed not statements */}
+      <h1>{isOnline ? "🟢" : "🔴"}</h1>
       {isLoggedIn ? (
         <button onClick={() => setIsLoggedIn(false)}>Login</button>
       ) : (
