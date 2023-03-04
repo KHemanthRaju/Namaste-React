@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import useOnline from "../utils/useOnline";
+import userContext from "../utils/UserContext";
 //import { Link } from "react-router-dom";
 const Link = require("react-router-dom").Link;
 
@@ -16,6 +17,7 @@ const Title = () => {
 const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
   const isOnline = useOnline();
+  const { user } = useContext(userContext);
   return (
     <div className="flex justify-between bg-pink-200 shadow-md">
       <Title />
@@ -41,6 +43,7 @@ const Header = () => {
       </div>
       {/* JSX Expressions are allowed not statements */}
       <h1>{isOnline ? "🟢" : "🔴"}</h1>
+      <h1 className="p-10 font-bold text-red-700">{user.name}</h1>
       {isLoggedIn ? (
         <button onClick={() => setIsLoggedIn(false)}>Login</button>
       ) : (
