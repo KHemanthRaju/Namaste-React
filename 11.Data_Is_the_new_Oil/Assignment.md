@@ -12,28 +12,8 @@ Time to use Lift up the State: If the data in â€œparent and children componentsâ
 
 ## 3. What is Context Provider and Context Consumer?
 
-The `type` attribute in the script tag defines the type of script that we we want to run inside our app.
-`type` attribute can be of the following types:
 
-- `text/javascript` : It is the basic standard of writing javascript code inside the `<script>` tag.
 
-e.g
-
-```
-<script type="text/javascript">
-    const a = "Hello";
-    const b = "World!";
-    console.log(a + " " + b); // Hello World!
-</script>
-```
-
-- `text/ecmascript` : this value indicates that the script is following the `EcmaScript` standards.
-
-- `module`: This value tells the browser that the script is a module that can import or export other files or modules inside it.
-
-- `text/babel` : This value indicates that the script is a babel type and required bable to transpile it.
-
-- `text/typescript`: As the name suggest the script is written in `TypeScript`.
 
 ## 4. `{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` in JSX.
 
