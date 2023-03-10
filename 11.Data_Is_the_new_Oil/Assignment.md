@@ -13,23 +13,5 @@ Time to use Lift up the State: If the data in â€œparent and children componentsâ
 ## 3. What is Context Provider and Context Consumer?
 
 
-
-
 ## 4. `{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` in JSX.
 
-- `{TitleComponent}`: This value describes the `TitleComponent` as a javascript expession or a variable or an element.
-The `{}` can embed a javascript expression or a values inside it.
-
-- `<TitleComponent/>` : This value represents a Component that is basically returning Some JSX value. In simple terms `TitleComponent` a function that is returning a JSX value.
-A compoenet is written inside the `{<  />}` expression.
-
-- `<TitleComponent></TitleComponent>` :  `<TitleComponent />` and `<TitleComponent></TitleComponent>` are equivalent only when `< TitleComponent />` has no children components.The opening and closing tags are created to include the child components.
-
-e.g.
-
-```
-<TitleComponent>
-    <ChildComponen1 />
-    <ChildComponen2 />
-    <ChildComponen3 />
-</TitleComponent>
