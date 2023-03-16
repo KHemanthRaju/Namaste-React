@@ -12,7 +12,7 @@ Time to use Lift up the State: If the data in â€œparent and children componentsâ
 
 ## 3. What is Context Provider and Context Consumer?
 Context-provider :
-Context-Consumer :
+Context-Consumer : Context-Consumer
 
 
 ## 4. `{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` in JSX.
