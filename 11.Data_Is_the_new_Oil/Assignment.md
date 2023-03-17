@@ -11,7 +11,7 @@ This concept is called lifting state up. It is of great use to maintain data con
 Time to use Lift up the State: If the data in “parent and children components” or in “cousin components” is Not in Sync.
 
 ## 3. What is Context Provider and Context Consumer?
-Context-provider :
+Context-provider : Context-provider
 Context-Consumer : Context-Consumer
 
 
