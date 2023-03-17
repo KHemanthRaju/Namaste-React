@@ -12,6 +12,7 @@ Time to use Lift up the State: If the data in â€œparent and children componentsâ
 
 ## 3. What is Context Provider and Context Consumer?
 Context-provider : Context-provider
+const value = useContext(MyContext); Accepts a context object (the value returned from React.createContext) and returns the current context value for that context. The current context value is determined by the value prop of the nearest <MyContext.Provider> above the calling component in the tree.
 Context-Consumer : Context-Consumer
 
 
