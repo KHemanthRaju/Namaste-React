@@ -1,0 +1,26 @@
+{
+  "name": "11.Data_is_the_new_oil",
+  "version": "1.0.0",
+  "description": "7. Finding the Path",
+  "main": "App.js",
+  "scripts": {
+    "start": "npx parcel index.html",
+    "test": "jest"
+  },
+  "keywords": [
+    "reactjs"
+  ],
+  "author": "Hemanth Raju",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.2",
+    "postcss": "^8.4.21",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.0"
+  }
+}
