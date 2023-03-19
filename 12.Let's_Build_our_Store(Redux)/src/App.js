@@ -15,6 +15,9 @@ import Profile from "./components/Profile";
 import Shimmer from "./components/Shimmer";
 import { Provider } from "react-redux";
 import store from "./utils/store";
+import Cart from "./components/Cart";
+import UserContext from "./utils/UserContext";
+import { useState } from "react";
 //import Instamart from "./components/Instamart";
 
 //Code splitting
@@ -28,12 +31,23 @@ const Instamart = lazy(() => import("./components/Instamart"));
 //Upon on demand loading -> upon render -> suspend loading
 
 const AppLayout = () => {
+  const [user, setUser] = useState({
+    name: "Hemanth Raju",
+    email: "rajuhemanth456@gmail.com",
+  });
   return (
     <>
       <Provider store={store}>
-        <Header />
-        <Outlet />
-        <Footer />
+        <UserContext.Provider
+          value={{
+            user: user,
+            setUser: setUser,
+          }}
+        >
+          <Header />
+          <Outlet />
+          <Footer />
+        </UserContext.Provider>
       </Provider>
     </>
   );
@@ -74,6 +88,10 @@ const approuter = createBrowserRouter([
             <Instamart />
           </Suspense>
         ),
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
     ],
   },
