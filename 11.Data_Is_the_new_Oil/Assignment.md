@@ -17,4 +17,3 @@ Context-Consumer :Context
 
 
 ## 4. `{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` in JSX.
-
