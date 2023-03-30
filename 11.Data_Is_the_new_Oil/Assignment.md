@@ -10,7 +10,7 @@ In React, each component has its state. Lifting the state up is a valuable conce
 This concept is called lifting state up. It is of great use to maintain data consistency in our react applications.
 Time to use Lift up the State: If the data in “parent and children components” or in “cousin components” is Not in Sync.
 
-## 3. What is Context Provider and Context Consumer? 
+## 3. What is Context Provider and Context Consumer?  
 Context-provider : Context-provider
 const value = useContext(MyContext); Accepts a context object (the value returned from React.createContext) and returns the current context value for that context. The current context value is determined by the value prop of the nearest <MyContext.Provider> above the calling component in the tree.
 Context-Consumer :Context
