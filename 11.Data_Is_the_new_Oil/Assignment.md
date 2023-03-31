@@ -4,7 +4,7 @@ Props are used to pass data from one component to another component. Prop drilli
 Props drilling can be avoided using ReactContext API or Redux library
 Reference : https://www.geeksforgeeks.org/what-is-prop-drilling-and-how-to-avoid-it/
 
-## 2. What is lifting the state up? 
+## 2. What is lifting the state up?  
 
 In React, each component has its state. Lifting the state up is a valuable concept for React developers since we often have a state that is accommodated within a single component but needs to be shared with its siblings. We lift the state up to make the parent state a single shared state and a sole "source of truth" and pass the parent's data to its children. 
 This concept is called lifting state up. It is of great use to maintain data consistency in our react applications.
