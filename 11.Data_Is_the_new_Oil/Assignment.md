@@ -1,4 +1,4 @@
-## 1. What is prop drilling?       
+## 1. What is prop drilling?         
 
 Props are used to pass data from one component to another component. Prop drilling is a situation where data is passed from one component through multiple interdependent components until you get to the component where the data is needed.
 Props drilling can be avoided using ReactContext API or Redux library
